@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Buda — Guest Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../shared.css">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="hu">HU</button>
+</div>
+
+<div class="page-wrap">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-badge">NEXTGEN REALTORS</div>
+    <h1>Luxury Buda</h1>
+    <p class="hero-address">Budapest, Móricz Zsigmond körtér 2, Level 3, apartment 1</p>
+    <p class="hero-welcome" data-en="Welcome! We hope you enjoy your stay. Here's everything you need." data-hu="Üdvözöljük! Kellemes tartózkodást kívánunk. Itt talál minden fontos információt.">Welcome! We hope you enjoy your stay. Here's everything you need.</p>
+  </div>
+
+  <!-- ===== QUICK ACTIONS ===== -->
+  <div class="quick-bar">
+    <a href="#wifi" class="quick-btn" onclick="openSection('wifi')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+      <span>WiFi</span>
+    </a>
+    <a href="#checkin" class="quick-btn" onclick="openSection('checkin')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Check-in</span>
+    </a>
+    <a href="#contact" class="quick-btn" onclick="openSection('contact')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-en="Contact" data-hu="Kapcsolat">Contact</span>
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Budapest+M%C3%B3ricz+Zsigmond+k%C3%B6rt%C3%A9r+2" target="_blank" class="quick-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span data-en="Map" data-hu="Térkép">Map</span>
+    </a>
+  </div>
+
+  <!-- ===== WIFI ===== -->
+  <div class="section open" id="wifi">
+    <button class="section-header">
+      <div class="section-icon wifi">📶</div>
+      <span class="section-title" data-en="WiFi" data-hu="WiFi">WiFi</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="wifi-card">
+          <div class="wifi-row">
+            <div>
+              <div class="wifi-label" data-en="Network & Password" data-hu="Hálózat & Jelszó">Network & Password</div>
+              <div class="wifi-value" data-en="Scan the QR code on the paper in the apartment, or check the bottom of the router for the network name and password." data-hu="Olvassa be a lakásban található papíron lévő QR-kódot, vagy ellenőrizze a router alján a hálózat nevét és jelszavát.">Scan the QR code on the paper in the apartment, or check the bottom of the router for the network name and password.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CHECK-IN / CHECK-OUT ===== -->
+  <div class="section open" id="checkin">
+    <button class="section-header">
+      <div class="section-icon checkin">🔑</div>
+      <span class="section-title" data-en="Check-in / Check-out" data-hu="Bejelentkezés / Kijelentkezés">Check-in / Check-out</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">15:00</div>
+            <div class="timeline-label">Check-in</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:00</div>
+            <div class="timeline-label">Check-out</div>
+          </div>
+        </div>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="On the day of your arrival we will send you all the details you need." data-hu="Érkezése napján elküldjük az összes szükséges információt.">On the day of your arrival we will send you all the details you need.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Upon checking out, please leave the apartment keys in the key holder — lockbox." data-hu="Kijelentkezéskor kérjük, hagyja a kulcsokat a kulcstartóban — lockbox.">Upon checking out, please leave the apartment keys in the key holder — lockbox.</span>
+          </li>
+        </ul>
+        <div class="tip-box mt-12" data-en="🔐 To lock the door, pull up the handle before turning the key until you hear a click." data-hu="🔐 Az ajtó zárásához húzza fel a kilincset, mielőtt elfordítja a kulcsot, amíg kattanást nem hall.">🔐 To lock the door, pull up the handle before turning the key until you hear a click.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HOUSE RULES ===== -->
+  <div class="section" id="rules">
+    <button class="section-header">
+      <div class="section-icon rules">📋</div>
+      <span class="section-title" data-en="House Rules" data-hu="Házszabályzat">House Rules</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="The apartment and the whole building are NON-SMOKING." data-hu="Az apartmanban és az egész épületben TILOS a dohányzás.">The apartment and the whole building are NON-SMOKING.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Avoid making noise after 9 PM and please be generally mindful of the neighborhood." data-hu="21 óra után kerülje a hangoskodást, és legyen tekintettel a szomszédokra.">Avoid making noise after 9 PM and please be generally mindful of the neighborhood.</span>
+          </li>
+        </ul>
+        <div class="tip-box mt-12" data-en="💧 The tap water is drinkable and of good quality." data-hu="💧 A csapvíz iható és jó minőségű.">💧 The tap water is drinkable and of good quality.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div class="section open" id="contact">
+    <button class="section-header">
+      <div class="section-icon contact">📞</div>
+      <span class="section-title" data-en="Contact" data-hu="Kapcsolat">Contact</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <a href="tel:112" class="contact-card">
+          <div class="icon emergency">🚨</div>
+          <div>
+            <div class="label" data-en="Emergency" data-hu="Segélyhívó">Emergency</div>
+            <div class="value">112</div>
+          </div>
+        </a>
+        <a href="tel:+36301865215" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 1" data-hu="Telefon 1">Phone 1</div>
+            <div class="value">+36 30 186 5215</div>
+          </div>
+        </a>
+        <a href="tel:+36707863387" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 2" data-hu="Telefon 2">Phone 2</div>
+            <div class="value">+36 70 786 3387</div>
+          </div>
+        </a>
+        <a href="tel:+36704749823" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 3" data-hu="Telefon 3">Phone 3</div>
+            <div class="value">+36 70 474 9823</div>
+          </div>
+        </a>
+        <p class="text-sm text-muted mt-12" data-en="The quickest way to reach us is through your Airbnb or Booking.com platform." data-hu="A leggyorsabb módja az elérésünknek, ha az Airbnb vagy Booking.com felületén ír nekünk.">The quickest way to reach us is through your Airbnb or Booking.com platform.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADDRESS ===== -->
+  <div class="section" id="address">
+    <button class="section-header">
+      <div class="section-icon transport">📍</div>
+      <span class="section-title" data-en="Address" data-hu="Cím">Address</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <p style="font-weight:700;font-size:15px;margin-bottom:12px">Budapest, Móricz Zsigmond körtér 2, Level 3, apartment 1</p>
+        <div class="address-block">
+          <button class="copy-btn" data-copy="Budapest, Móricz Zsigmond körtér 2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span data-en="Copy address" data-hu="Cím másolása">Copy address</span>
+          </button>
+          <a href="https://www.google.com/maps/search/?api=1&query=Budapest+M%C3%B3ricz+Zsigmond+k%C3%B6rt%C3%A9r+2" target="_blank" class="maps-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Navigate" data-hu="Navigálás">Navigate</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TRANSPORT ===== -->
+  <div class="section" id="transport">
+    <button class="section-header">
+      <div class="section-icon transport">🚇</div>
+      <span class="section-title" data-en="Getting Around" data-hu="Közlekedés">Getting Around</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <h4 class="mb-8" data-en="🚕 Taxi" data-hu="🚕 Taxi">🚕 Taxi</h4>
+        <p class="text-sm mb-12" data-en="We always recommend using the &quot;Bolt&quot; application. We are also happy to help and book a taxi for you." data-hu="Mindig a &quot;Bolt&quot; alkalmazást ajánljuk. Szívesen segítünk taxit rendelni is.">We always recommend using the "Bolt" application. We are also happy to help and book a taxi for you.</p>
+
+        <h4 class="mb-8" data-en="🚌 Public Transportation" data-hu="🚌 Tömegközlekedés">🚌 Public Transportation</h4>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Metro M4 at Móricz Zsigmond square — right outside the building." data-hu="M4 metró a Móricz Zsigmond téren — közvetlenül az épület előtt.">Metro M4 at Móricz Zsigmond square — right outside the building.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Tramlines 56A and 41 are very popular and stop right at the square." data-hu="Az 56A és 41-es villamosok nagyon népszerűek és közvetlenül a téren állnak meg.">Tramlines 56A and 41 are very popular and stop right at the square.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Tram 47/49 goes over Liberty Bridge to the Pest side — very scenic ride." data-hu="A 47/49-es villamos a Szabadság hídon át a pesti oldalra megy — nagyon szép útvonal.">Tram 47/49 goes over Liberty Bridge to the Pest side — very scenic ride.</span>
+          </li>
+        </ul>
+        <div class="tip-box mt-12" data-en="🎫 Tickets can be purchased by the Budapest Go app, or from the purple ticket machines at metro stops. The machines speak English." data-hu="🎫 Jegyeket a Budapest Go alkalmazásban vagy a lila jegyautomatákból vásárolhat a metróállomásokon. Az automaták angolul is működnek.">🎫 Tickets can be purchased by the Budapest Go app, or from the purple ticket machines at metro stops. The machines speak English.</div>
+
+        <h4 class="mt-16 mb-8" data-en="🅿️ Parking" data-hu="🅿️ Parkolás">🅿️ Parking</h4>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Street parking: Mon–Fri 8 AM – 8 PM (paid). Weekends: free." data-hu="Utcai parkolás: Hé–Pé 8:00–20:00 (fizetős). Hétvégén: ingyenes.">Street parking: Mon–Fri 8 AM – 8 PM (paid). Weekends: free.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Parking garage: Bartók Ház Parkolója Budapest — Bartók Béla út 43-47, 1114." data-hu="Parkolóház: Bartók Ház Parkolója Budapest — Bartók Béla út 43-47, 1114.">Parking garage: Bartók Ház Parkolója Budapest — Bartók Béla út 43-47, 1114.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GROCERY ===== -->
+  <div class="section" id="grocery">
+    <button class="section-header">
+      <div class="section-icon grocery">🛒</div>
+      <span class="section-title" data-en="Grocery & Pharmacy" data-hu="Bevásárlás & Gyógyszertár">Grocery & Pharmacy</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="place-card">
+          <div class="place-name">SPAR</div>
+          <div class="place-address">Budapest, Bartók Béla út 51</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=SPAR+Bart%C3%B3k+B%C3%A9la+%C3%BAt+51+Budapest" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+        <div class="place-card">
+          <div class="place-name">LIDL</div>
+          <div class="place-address">Budapest, Bartók Béla út 47</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=LIDL+Bart%C3%B3k+B%C3%A9la+%C3%BAt+47+Budapest" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+        <div class="place-card">
+          <div class="place-name" data-en="Pharmacy" data-hu="Gyógyszertár">Pharmacy</div>
+          <div class="place-desc" data-en="At the crossing next to OTP Bank." data-hu="A kereszteződésnél az OTP Bank mellett.">At the crossing next to OTP Bank.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BANKING ===== -->
+  <div class="section" id="banking">
+    <button class="section-header">
+      <div class="section-icon bank">🏦</div>
+      <span class="section-title" data-en="Banking & ATM" data-hu="Bankolás & ATM">Banking & ATM</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="OTP Bank — Karinthy Frigyes út 2, 1111 Budapest." data-hu="OTP Bank — Karinthy Frigyes út 2, 1111 Budapest.">OTP Bank — Karinthy Frigyes út 2, 1111 Budapest.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Erste Bank — Bartók Béla út 43-47, 1114 Budapest." data-hu="Erste Bank — Bartók Béla út 43-47, 1114 Budapest.">Erste Bank — Bartók Béla út 43-47, 1114 Budapest.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESTAURANTS ===== -->
+  <div class="section" id="restaurants">
+    <button class="section-header">
+      <div class="section-icon food">🍽️</div>
+      <span class="section-title" data-en="Restaurants & Bars" data-hu="Éttermek & Bárok">Restaurants & Bars</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="cat-filter">
+          <button class="cat-btn active" data-filter="all" data-en="All" data-hu="Összes">All</button>
+          <button class="cat-btn" data-filter="hungarian" data-en="Hungarian" data-hu="Magyar">Hungarian</button>
+          <button class="cat-btn" data-filter="fine" data-en="Fine Dining" data-hu="Fine Dining">Fine Dining</button>
+          <button class="cat-btn" data-filter="breakfast" data-en="Breakfast" data-hu="Reggeli">Breakfast</button>
+          <button class="cat-btn" data-filter="coffee" data-en="Coffee" data-hu="Kávézó">Coffee</button>
+          <button class="cat-btn" data-filter="pub" data-en="Ruin Pubs" data-hu="Romkocsmák">Ruin Pubs</button>
+          <button class="cat-btn" data-filter="wine" data-en="Wine Bars" data-hu="Borozók">Wine Bars</button>
+          <button class="cat-btn" data-filter="street" data-en="Street Food" data-hu="Street Food">Street Food</button>
+        </div>
+
+        <!-- Hungarian -->
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Stand 25</div>
+          <div class="place-desc" data-en="Popular Hungarian food, not too cheap but excellent quality." data-hu="Népszerű magyar ételek, nem olcsó, de kiváló minőség.">Popular Hungarian food, not too cheap but excellent quality.</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Pozsonyi Kisvendéglő</div>
+          <div class="place-desc" data-en="Traditional Hungarian cuisine, cozy atmosphere." data-hu="Hagyományos magyar konyha, hangulatos környezet.">Traditional Hungarian cuisine, cozy atmosphere.</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Séf Asztala</div>
+          <div class="place-desc" data-en="Chef's table experience with Hungarian flavors." data-hu="Séf asztala élmény magyar ízekkel.">Chef's table experience with Hungarian flavors.</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Rosenstein</div>
+          <div class="place-desc" data-en="Great Hungarian and Jewish courses, close to Keleti station." data-hu="Kiváló magyar és zsidó konyha, a Keleti pályaudvar közelében.">Great Hungarian and Jewish courses, close to Keleti station.</div>
+          <div class="place-address">Mosonyi utca 3</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Great Market Hall</div>
+          <div class="place-desc" data-en="Kiosks at the upper floor — popular Hungarian food among tourists and locals." data-hu="Az emeleti kioskok — népszerű magyar ételek turisták és helyiek körében.">Kiosks at the upper floor — popular Hungarian food among tourists and locals.</div>
+        </div>
+
+        <!-- Fine Dining -->
+        <div class="place-card" data-cat="fine">
+          <div class="place-name">Tom George</div>
+          <div class="place-desc" data-en="Good Italian restaurant, although quite expensive." data-hu="Jó olasz étterem, bár elég drága.">Good Italian restaurant, although quite expensive.</div>
+          <div class="place-address">Október 6. utca 8</div>
+        </div>
+        <div class="place-card" data-cat="fine">
+          <div class="place-name">Borkonyha ⭐</div>
+          <div class="place-desc" data-en="Michelin-starred restaurant. Perfect for fine dining lovers." data-hu="Michelin-csillagos étterem. Tökéletes a fine dining rajongóknak.">Michelin-starred restaurant. Perfect for fine dining lovers.</div>
+          <div class="place-address">Sas utca 3</div>
+        </div>
+        <div class="place-card" data-cat="fine">
+          <div class="place-name">Pampas</div>
+          <div class="place-desc" data-en="Argentinian Steak house, close to Szabadság bridge." data-hu="Argentin steakház, a Szabadság híd közelében.">Argentinian Steak house, close to Szabadság bridge.</div>
+          <div class="place-address">Vámház körút 6</div>
+        </div>
+
+        <!-- Breakfast -->
+        <div class="place-card" data-cat="breakfast">
+          <div class="place-name">Farger</div>
+          <div class="place-desc" data-en="At the crossing of Szabadság tér and Zoltán utca." data-hu="A Szabadság tér és Zoltán utca sarkán.">At the crossing of Szabadság tér and Zoltán utca.</div>
+        </div>
+        <div class="place-card" data-cat="breakfast">
+          <div class="place-name">Gerlóczy Café</div>
+          <div class="place-desc" data-en="The hosts' favorite breakfast place! Very good restaurant with excellent breakfast." data-hu="A házigazdák kedvenc reggeliző helye! Kiváló étterem, kiváló reggelivel.">The hosts' favorite breakfast place! Very good restaurant with excellent breakfast.</div>
+          <div class="place-address">Gerlóczy utca 1, 5th district</div>
+        </div>
+
+        <!-- Vegetarian -->
+        <div class="place-card" data-cat="breakfast">
+          <div class="place-name">Napfényes Étterem 🌱</div>
+          <div class="place-desc" data-en="Voted the best vegetarian restaurant in Budapest." data-hu="Budapest legjobb vegetáriánus éttermének választották.">Voted the best vegetarian restaurant in Budapest.</div>
+          <div class="place-address" data-en="39, Rózsa utca (7th) & 2, Ferenciek tere (5th)" data-hu="Rózsa utca 39 (VII.) & Ferenciek tere 2 (V.)">39, Rózsa utca (7th) & 2, Ferenciek tere (5th)</div>
+        </div>
+
+        <!-- Coffee -->
+        <div class="place-card" data-cat="coffee">
+          <div class="place-name">Gerbaud</div>
+          <div class="place-desc" data-en="Traditional coffee house at Vörösmarty tér. Beautiful building, evoking the 19th century." data-hu="Hagyományos kávéház a Vörösmarty téren. Gyönyörű épület, 19. századi hangulat.">Traditional coffee house at Vörösmarty tér. Beautiful building, evoking the 19th century.</div>
+        </div>
+        <div class="place-card" data-cat="coffee">
+          <div class="place-name">New York Café</div>
+          <div class="place-desc" data-en="Stunning interior, excellent confectionery. Erzsébet körút 9-11." data-hu="Lenyűgöző belső, kiváló sütemények. Erzsébet körút 9-11.">Stunning interior, excellent confectionery. Erzsébet körút 9-11.</div>
+        </div>
+        <div class="place-card" data-cat="coffee">
+          <div class="place-name">My Little Melbourne</div>
+          <div class="place-desc" data-en="Voted one of the best cafes in the world by Lonely Planet." data-hu="A Lonely Planet a világ egyik legjobb kávézójának választotta.">Voted one of the best cafes in the world by Lonely Planet.</div>
+        </div>
+
+        <!-- Ruin Pubs -->
+        <div class="place-card" data-cat="pub">
+          <div class="place-name">Szimpla Kert</div>
+          <div class="place-desc" data-en="One of the first ruin pubs! A must-visit in Budapest." data-hu="Az egyik első romkocsma! Kötelező látogatás Budapesten.">One of the first ruin pubs! A must-visit in Budapest.</div>
+          <div class="place-address">Kazinczy utca 14</div>
+        </div>
+        <div class="place-card" data-cat="pub">
+          <div class="place-name">Instant</div>
+          <div class="place-desc" data-en="Large ruin pub at Akácfa utca 49." data-hu="Nagy romkocsma az Akácfa utca 49-ben.">Large ruin pub at Akácfa utca 49.</div>
+        </div>
+        <div class="place-card" data-cat="pub">
+          <div class="place-name">Bobek</div>
+          <div class="place-desc" data-en="More affordable pub, popular among young adults." data-hu="Megfizethetőbb kocsma, népszerű a fiatalok körében.">More affordable pub, popular among young adults.</div>
+          <div class="place-address">Kazinczy utca 53</div>
+        </div>
+        <div class="place-card" data-cat="pub">
+          <div class="place-name">Champs Sport Pub</div>
+          <div class="place-desc" data-en="Lots of screens, good beer and food, close to the Great Synagogue." data-hu="Sok képernyő, jó sör és étel, a Dohány utcai zsinagóga közelében.">Lots of screens, good beer and food, close to the Great Synagogue.</div>
+          <div class="place-address">Dohány utca 20</div>
+        </div>
+
+        <!-- Wine Bars -->
+        <div class="place-card" data-cat="wine">
+          <div class="place-name">Doblo Wine Bar</div>
+          <div class="place-desc" data-en="Good quality Hungarian wines. Corner of Dob and Holló streets." data-hu="Jó minőségű magyar borok. Dob és Holló utca sarkán.">Good quality Hungarian wines. Corner of Dob and Holló streets.</div>
+          <div class="place-address">Dob utca 20</div>
+        </div>
+        <div class="place-card" data-cat="wine">
+          <div class="place-name">DiVino</div>
+          <div class="place-desc" data-en="Wine bars near the Basilica. Popular options." data-hu="Borozók a Bazilika közelében. Népszerű választás.">Wine bars near the Basilica. Popular options.</div>
+          <div class="place-address">Szent István tér 3</div>
+        </div>
+        <div class="place-card" data-cat="wine">
+          <div class="place-name">Kadarka</div>
+          <div class="place-desc" data-en="Good wine bar on Király utca, near Gozsdu Udvar." data-hu="Jó borozó a Király utcán, a Gozsdu Udvar közelében.">Good wine bar on Király utca, near Gozsdu Udvar.</div>
+        </div>
+
+        <!-- International / Other -->
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Gozsdu Udvar</div>
+          <div class="place-desc" data-en="Between Király and Dob streets — all types of restaurants and bars. Jamie Oliver's Pizzeria, Hungarian, Jewish, Thai, international." data-hu="A Király és Dob utca között — mindenféle étterem és bár. Jamie Oliver's Pizzeria, magyar, zsidó, thai, nemzetközi.">Between Király and Dob streets — all types of restaurants and bars. Jamie Oliver's Pizzeria, Hungarian, Jewish, Thai, international.</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Mosselen</div>
+          <div class="place-desc" data-en="Good Belgian restaurant with good beers." data-hu="Jó belga étterem, jó sörökkel.">Good Belgian restaurant with good beers.</div>
+          <div class="place-address">Pannónia utca 14</div>
+        </div>
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Good Bar / Good Burger / Púder / Pata Negra</div>
+          <div class="place-desc" data-en="Kecskeméti and Ráday utca area — all good options for Hungarian cuisine." data-hu="Kecskeméti és Ráday utca környéke — mind jó választás magyar konyhához.">Kecskeméti and Ráday utca area — all good options for Hungarian cuisine.</div>
+        </div>
+
+        <!-- Street Food -->
+        <div class="place-card" data-cat="street">
+          <div class="place-name">Karaván</div>
+          <div class="place-desc" data-en="Street food court on Kazinczy utca — lángos, sausages, burgers." data-hu="Street food udvar a Kazinczy utcán — lángos, kolbász, burger.">Street food court on Kazinczy utca — lángos, sausages, burgers.</div>
+        </div>
+        <div class="place-card" data-cat="street">
+          <div class="place-name">Pizza Me</div>
+          <div class="place-desc" data-en="Excellent pizza slices, Italian ingredients. Deák tér and Király utca." data-hu="Kiváló pizzaszeletek, olasz alapanyagok. Deák tér és Király utca.">Excellent pizza slices, Italian ingredients. Deák tér and Király utca.</div>
+        </div>
+
+        <div class="warning-box mt-16" data-en="⚠️ TO BE AVOIDED: Váci street restaurants are widely known for overbilling and poor service." data-hu="⚠️ KERÜLENDŐ: A Váci utcai éttermek közismerten túlszámláznak és rossz a kiszolgálás.">⚠️ TO BE AVOIDED: Váci street restaurants are widely known for overbilling and poor service.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SIGHTS ===== -->
+  <div class="section" id="sights">
+    <button class="section-header">
+      <div class="section-icon sights">🏛️</div>
+      <span class="section-title" data-en="Sights & Attractions" data-hu="Látnivalók">Sights & Attractions</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <h4 class="mb-12" data-en="Must See" data-hu="Kötelező látnivalók">Must See</h4>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Baths & Spas" data-hu="Fürdők">Baths & Spas</div>
+          <div class="sight-desc" data-en="Széchenyi (Városliget, Metro M1), Rudas (Döbrentei tér), Gellért (Gellért tér)." data-hu="Széchenyi (Városliget, M1 metró), Rudas (Döbrentei tér), Gellért (Gellért tér).">Széchenyi (Városliget, Metro M1), Rudas (Döbrentei tér), Gellért (Gellért tér).</div>
+          <span class="sight-badge" data-en="Top Pick" data-hu="Kiemelt">Top Pick</span>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Heroes' Square / Hősök Tere" data-hu="Hősök Tere">Heroes' Square / Hősök Tere</div>
+          <div class="sight-desc" data-en="One of the major squares, famous for the Millennium Monument. Museums and Városliget nearby." data-hu="Az egyik legfontosabb tér, a Millenniumi Emlékmű. Múzeumok és a Városliget a közelben.">One of the major squares, famous for the Millennium Monument. Museums and Városliget nearby.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="The Castle" data-hu="A Vár">The Castle</div>
+          <div class="sight-desc" data-en="Walk up from Lánchíd/Chain Bridge or take the funicular. Fisherman's Bastion, Matthias church, Labyrinth." data-hu="Sétáljon fel a Lánchídtól vagy vegyen siklót. Halászbástya, Mátyás-templom, Labirintus.">Walk up from Lánchíd/Chain Bridge or take the funicular. Fisherman's Bastion, Matthias church, Labyrinth.</div>
+          <span class="sight-badge" data-en="Top Pick" data-hu="Kiemelt">Top Pick</span>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Parliament" data-hu="Országház">Parliament</div>
+          <div class="sight-desc" data-en="Beautiful from outside. Guided tours available inside." data-hu="Kívülről gyönyörű. Belül vezetett túrák elérhetők.">Beautiful from outside. Guided tours available inside.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Great Market Hall" data-hu="Központi Vásárcsarnok">Great Market Hall</div>
+          <div class="sight-desc" data-en="End of Váci utca, close to Szabadság bridge. Best quality Hungarian food — salamis, goose liver." data-hu="A Váci utca végén, a Szabadság híd közelében. Legjobb magyar ételek — szalámi, libamáj.">End of Váci utca, close to Szabadság bridge. Best quality Hungarian food — salamis, goose liver.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="The Great Synagogue" data-hu="Dohány utcai Zsinagóga">The Great Synagogue</div>
+          <div class="sight-desc" data-en="At Dohány utca 2 — the biggest synagogue in Europe. St. Stephen's Basilica at Szent István square — great view from the top." data-hu="Dohány utca 2 — Európa legnagyobb zsinagógája. A Szent István-bazilika a Szent István téren — szép kilátás felülről.">At Dohány utca 2 — the biggest synagogue in Europe. St. Stephen's Basilica at Szent István square — great view from the top.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Opera House" data-hu="Operaház">Opera House</div>
+          <div class="sight-desc" data-en="Andrássy út 22 — one of Budapest's most beautiful avenues, full of embassies." data-hu="Andrássy út 22 — Budapest egyik legszebb sugárútja, tele nagykövetségekkel.">Andrássy út 22 — one of Budapest's most beautiful avenues, full of embassies.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Danube & Bridges" data-hu="Duna & Hidak">Danube & Bridges</div>
+          <div class="sight-desc" data-en="The most beautiful part is between Erzsébet and Lánchíd — the oldest bridge in Budapest." data-hu="A legszebb szakasz az Erzsébet és Lánchíd között — Budapest legrégebbi hídja.">The most beautiful part is between Erzsébet and Lánchíd — the oldest bridge in Budapest.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Vörösmarty tér" data-hu="Vörösmarty tér">Vörösmarty tér</div>
+          <div class="sight-desc" data-en="Where Váci street ends. In December — famous Christmas fair." data-hu="A Váci utca vége. Decemberben — híres karácsonyi vásár.">Where Váci street ends. In December — famous Christmas fair.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Giant Wheel" data-hu="Óriáskerék">Giant Wheel</div>
+          <div class="sight-desc" data-en="At Erzsébet tér — a bit like the London Eye (might not operate all year)." data-hu="Az Erzsébet téren — hasonló a London Eye-hoz (nem feltétlenül üzemel egész évben).">At Erzsébet tér — a bit like the London Eye (might not operate all year).</div>
+        </div>
+
+        <h4 class="mt-16 mb-12" data-en="Hidden Gems" data-hu="Rejtett kincsek">Hidden Gems</h4>
+
+        <div class="sight-card">
+          <div class="sight-name">Pinball Museum</div>
+          <div class="sight-desc" data-en="13th district, Radnóti Miklós utca 18. Over 130 pinball machines to play!" data-hu="XIII. kerület, Radnóti Miklós utca 18. Több mint 130 flipper, amivel játszhat!">13th district, Radnóti Miklós utca 18. Over 130 pinball machines to play!</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Hospital in the Rock</div>
+          <div class="sight-desc" data-en="4/C Lovas út, 1st district. WWII hospital in caves under Castle Hill. Now a fascinating museum." data-hu="Lovas út 4/C, I. kerület. II. világháborús kórház a Várhegy barlangjában. Ma lenyűgöző múzeum.">4/C Lovas út, 1st district. WWII hospital in caves under Castle Hill. Now a fascinating museum.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Gül Baba's Tomb" data-hu="Gül Baba Türbéje">Gül Baba's Tomb</div>
+          <div class="sight-desc" data-en="14 Mecset utca, 2nd district. Turkish monk's tomb with a nice park around." data-hu="Mecset utca 14, II. kerület. Török szerzetes sírja szép parkkal körülvéve.">14 Mecset utca, 2nd district. Turkish monk's tomb with a nice park around.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Escape Rooms" data-hu="Szabadulószobák">Escape Rooms</div>
+          <div class="sight-desc" data-en="Very popular in Hungary. Great fun, especially for groups!" data-hu="Nagyon népszerűek Magyarországon. Remek szórakozás, főleg csapatoknak!">Very popular in Hungary. Great fun, especially for groups!</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Károlyi Kert</div>
+          <div class="sight-desc" data-en="Nice small park in the middle of downtown, next to Magyar utca." data-hu="Szép kis park a belváros közepén, a Magyar utca mellett.">Nice small park in the middle of downtown, next to Magyar utca.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Museum of Illusions" data-hu="Illúziók Múzeuma">Museum of Illusions</div>
+          <div class="sight-desc" data-en="Great fun for the whole family." data-hu="Remek szórakozás az egész családnak.">Great fun for the whole family.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Uránia Film Theatre</div>
+          <div class="sight-desc" data-en="21 Rákóczi út — the most beautiful cinema in Budapest. 19th century café upstairs." data-hu="Rákóczi út 21 — Budapest legszebb mozija. 19. századi kávéház az emeleten.">21 Rákóczi út — the most beautiful cinema in Budapest. 19th century café upstairs.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Botanical Garden / Füvészkert" data-hu="Füvészkert">Botanical Garden / Füvészkert</div>
+          <div class="sight-desc" data-en="25 Illés utca, district 8. Hundred-year-old trees, beautiful flowers. Bring a blanket for a picnic!" data-hu="Illés utca 25, VIII. kerület. Százéves fák, gyönyörű virágok. Vigyen pokrócot piknikhez!">25 Illés utca, district 8. Hundred-year-old trees, beautiful flowers. Bring a blanket for a picnic!</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Hidden Mini Statues" data-hu="Rejtett miniszobrok">Hidden Mini Statues</div>
+          <div class="sight-desc" data-en="10-20 cm tall statues hidden around Budapest by Mihály Kolodko. A great treasure hunt! Search for 'Kolodko statues'." data-hu="10-20 cm magas szobrok elrejtve Budapest-szerte, Kolodko Mihály alkotásai. Remek kincskeresés! Keressen rá: 'Kolodko szobrok'.">10-20 cm tall statues hidden around Budapest by Mihály Kolodko. A great treasure hunt! Search for 'Kolodko statues'.</div>
+        </div>
+
+        <h4 class="mt-16 mb-12" data-en="For Kids & Families" data-hu="Gyerekeknek & Családoknak">For Kids & Families</h4>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Budapest Zoo" data-hu="Budapesti Állatkert">Budapest Zoo</div>
+          <div class="sight-desc" data-en="In the City Park (Városliget). Seal shows, gorillas, elephants." data-hu="A Városligetben. Fókabemutató, gorillák, elefántok.">In the City Park (Városliget). Seal shows, gorillas, elephants.</div>
+        </div>
+        <div class="sight-card">
+          <div class="sight-name">Tropicarium</div>
+          <div class="sight-desc" data-en="Shark zoo in Campona mall, 22nd district. Mainly water life." data-hu="Cápás zoo a Campona bevásárlóközpontban, XXII. kerület.">Shark zoo in Campona mall, 22nd district. Mainly water life.</div>
+        </div>
+        <div class="sight-card">
+          <div class="sight-name">Kockapark / Brickpark</div>
+          <div class="sight-desc" data-en="Lego exhibition with Lego installations, also in Campona mall." data-hu="Lego kiállítás Lego installációkkal, szintén a Campona bevásárlóközpontban.">Lego exhibition with Lego installations, also in Campona mall.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIPS ===== -->
+  <div class="section" id="tips">
+    <button class="section-header">
+      <div class="section-icon tips">💡</div>
+      <span class="section-title" data-en="Useful Tips" data-hu="Hasznos tippek">Useful Tips</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="tip-box" data-en="💧 The tap water is drinkable and of good quality." data-hu="💧 A csapvíz iható és jó minőségű.">💧 The tap water is drinkable and of good quality.</div>
+        <div class="tip-box" data-en="💰 Tipping: The regular tip is around 10%. Some restaurants automatically add 15% service charge — check the bottom of your bill." data-hu="💰 Borravaló: A szokásos borravaló kb. 10%. Egyes éttermek automatikusan felszámítanak 15% szervizdíjat — ellenőrizze a számla alját.">💰 Tipping: The regular tip is around 10%. Some restaurants automatically add 15% service charge — check the bottom of your bill.</div>
+        <div class="tip-box" data-en="🎫 Download the &quot;Budapest Go&quot; app for public transport tickets." data-hu="🎫 Töltse le a &quot;Budapest Go&quot; alkalmazást a tömegközlekedési jegyekhez.">🎫 Download the "Budapest Go" app for public transport tickets.</div>
+        <div class="tip-box" data-en="🚕 Use the &quot;Bolt&quot; app for taxis — reliable and fair pricing." data-hu="🚕 Használja a &quot;Bolt&quot; alkalmazást taxihoz — megbízható és korrekt árazás.">🚕 Use the "Bolt" app for taxis — reliable and fair pricing.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEEDBACK ===== -->
+  <div class="section" id="feedback">
+    <button class="section-header">
+      <div class="section-icon feedback">⭐</div>
+      <span class="section-title" data-en="Rate Your Stay" data-hu="Értékelje tartózkodását">Rate Your Stay</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content" style="text-align:center">
+        <p class="mb-12" data-en="We'd love to hear about your experience!" data-hu="Szívesen hallanánk a tapasztalatairól!">We'd love to hear about your experience!</p>
+        <p class="text-sm text-muted" data-en="Please give us feedback and review our apartment at the website you booked your holiday." data-hu="Kérjük, értékeljen minket azon a weboldalon, ahol a szállást foglalta.">Please give us feedback and review our apartment at the website you booked your holiday.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    <div class="footer-brand">NEXTGEN REALTORS</div>
+    <p data-en="Your comfort is our priority" data-hu="Az Ön kényelme a legfontosabb">Your comfort is our priority</p>
+  </div>
+
+</div>
+
+<script src="../../shared.js"></script>
+<script>
+function openSection(id) {
+  const section = document.getElementById(id);
+  if (section && !section.classList.contains('open')) {
+    section.classList.add('open');
+  }
+}
+</script>
+</body>
+</html>

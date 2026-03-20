@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Portal — NextGen Realtors (Admin)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #FFD600; --black: #1A1A1A; --dark: #2D2D2D; --gray: #6B7280;
+      --gray-light: #F3F4F6; --gray-border: #E5E7EB; --white: #FFFFFF;
+      --green: #10B981; --blue: #3B82F6; --radius: 12px;
+    }
+    body { font-family: 'Open Sans', sans-serif; background: var(--gray-light); color: var(--black); }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+    .header {
+      background: linear-gradient(135deg, var(--black), #2D2D2D);
+      color: white; padding: 40px 24px; text-align: center;
+    }
+    .header-badge {
+      display: inline-block; background: var(--gold); color: #1A1A1A;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px;
+      letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 14px;
+      border-radius: 20px; margin-bottom: 16px;
+    }
+    .header h1 { font-size: 28px; margin-bottom: 8px; }
+    .header p { opacity: .8; font-size: 14px; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 24px 16px; }
+
+    .section-title {
+      font-size: 14px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; color: var(--gray); margin: 24px 0 12px;
+    }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+
+    .apt-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 20px; display: flex; align-items: center; gap: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .apt-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+
+    .apt-emoji {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; flex-shrink: 0;
+    }
+    .apt-emoji.bp { background: #DBEAFE; }
+    .apt-emoji.balaton { background: #D1FAE5; }
+
+    .apt-info { flex: 1; }
+    .apt-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; }
+    .apt-address { font-size: 13px; color: var(--gray); margin-top: 2px; }
+
+    .apt-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+    .btn {
+      padding: 8px 14px; border-radius: 8px; font-size: 12px;
+      font-weight: 700; cursor: pointer; transition: .2s; border: none;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 4px;
+    }
+    .btn-gold { background: var(--gold); color: #1A1A1A; }
+    .btn-gold:hover { background: #C7A600; }
+    .btn-outline { background: transparent; border: 1px solid var(--gray-border); color: var(--black); }
+    .btn-outline:hover { background: var(--gray-light); }
+
+    .btn-copied { background: var(--green) !important; color: white !important; }
+
+    .footer { text-align: center; padding: 40px 20px; color: var(--gray); font-size: 12px; }
+
+    @media (max-width: 600px) {
+      .card-grid { grid-template-columns: 1fr; }
+      .apt-card { flex-direction: column; text-align: center; }
+      .apt-actions { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-badge">ADMIN PANEL</div>
+  <h1>Guest Portal</h1>
+  <p>NextGen Realtors — Vendég oldalak kezelése</p>
+</div>
+
+<div class="container">
+
+  <div class="section-title">Budapest apartmanok</div>
+  <div class="card-grid">
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Kazinczy Residence</div>
+        <div class="apt-address">VII. ker., Kazinczy u. 9</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/k7f2m9x4q1/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/k7f2m9x4q1/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Kléh Residence</div>
+        <div class="apt-address">XII. ker., Kléh István u. 3/A</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/p3w8n5v6j2/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/p3w8n5v6j2/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Luxury Buda</div>
+        <div class="apt-address">XI. ker., Móricz Zsigmond körtér 2</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/r9t4h1b8c6/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/r9t4h1b8c6/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Moon Residence</div>
+        <div class="apt-address">V. ker., Hold utca 15</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/m2x7d3f5a0/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/m2x7d3f5a0/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Ráday Residence</div>
+        <div class="apt-address">IX. ker., Ráday utca 45</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/v5n3k7t2y1/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/v5n3k7t2y1/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji bp">🏙️</div>
+      <div class="apt-info">
+        <div class="apt-name">Terrace Vista</div>
+        <div class="apt-address">VIII. ker., Tolnai Lajos utca 26</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/b8c4f6h0x3/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/b8c4f6h0x3/', this)">Link másolás</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-title">Balatoni ingatlanok</div>
+  <div class="card-grid">
+
+    <div class="apt-card">
+      <div class="apt-emoji balaton">🏖️</div>
+      <div class="apt-info">
+        <div class="apt-name">Peony Apartment</div>
+        <div class="apt-address">Siófok, Bláthy Ottó utca 19</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/s6j1q9w4e8/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/s6j1q9w4e8/', this)">Link másolás</button>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <div class="apt-emoji balaton">🏖️</div>
+      <div class="apt-info">
+        <div class="apt-name">Kemencésház — Kaptalantóti</div>
+        <div class="apt-address">Balatonszabadi, Vak Bottyán u. 2L</div>
+      </div>
+      <div class="apt-actions">
+        <a href="g/d1a9e5m7w2/" target="_blank" class="btn btn-gold">Megnyitás</a>
+        <button class="btn btn-outline" onclick="copyLink('g/d1a9e5m7w2/', this)">Link másolás</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  <p><strong>NextGen Realtors</strong> — Guest Portal Admin</p>
+  <p style="margin-top:4px">A "Link másolás" gomb a relatív URL-t másolja. Ha a site deployolva van, a teljes URL-t módosítsd.</p>
+</div>
+
+<script>
+function copyLink(filename, btn) {
+  const url = window.location.href.replace(/[^/]*$/, '') + filename;
+  navigator.clipboard.writeText(url).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Másolva!';
+    btn.classList.add('btn-copied');
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.classList.remove('btn-copied');
+    }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>

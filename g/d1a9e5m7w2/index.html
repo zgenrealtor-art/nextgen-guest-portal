@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemencésház — Guest Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../shared.css">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="hu">HU</button>
+</div>
+
+<div class="page-wrap">
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-badge">NEXTGEN REALTORS</div>
+    <h1>Kemencésház</h1>
+    <h2 style="font-size:16px;font-weight:600;opacity:.8;margin-bottom:12px">Kaptalantóti</h2>
+    <p class="hero-address">8651 Balatonszabadi, Vak Bottyán utca 2L</p>
+    <p class="hero-welcome" data-en="Welcome! We hope you enjoy your stay at Lake Balaton. Here's everything you need." data-hu="Üdvözöljük! Kellemes tartózkodást kívánunk a Balatonnál. Itt talál minden fontos információt.">Welcome! We hope you enjoy your stay at Lake Balaton. Here's everything you need.</p>
+  </div>
+
+  <!-- ===== QUICK ACTIONS ===== -->
+  <div class="quick-bar">
+    <a href="#wifi" class="quick-btn" onclick="openSection('wifi')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+      <span>WiFi</span>
+    </a>
+    <a href="#checkin" class="quick-btn" onclick="openSection('checkin')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Check-in</span>
+    </a>
+    <a href="#contact" class="quick-btn" onclick="openSection('contact')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-en="Contact" data-hu="Kapcsolat">Contact</span>
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&query=8651+Balatonszabadi+Vak+Botty%C3%A1n+utca+2L" target="_blank" class="quick-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span data-en="Map" data-hu="Térkép">Map</span>
+    </a>
+  </div>
+
+  <!-- ===== WIFI ===== -->
+  <div class="section open" id="wifi">
+    <button class="section-header">
+      <div class="section-icon wifi">📶</div>
+      <span class="section-title" data-en="WiFi" data-hu="WiFi">WiFi</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="wifi-card">
+          <div class="wifi-row">
+            <div>
+              <div class="wifi-label" data-en="Network" data-hu="Hálózat">Network</div>
+              <div class="wifi-value">Kemenceshaz 2</div>
+            </div>
+            <button class="copy-btn" data-copy="Kemenceshaz 2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span data-en="Copy" data-hu="Másolás">Copy</span>
+            </button>
+          </div>
+          <div class="wifi-row">
+            <div>
+              <div class="wifi-label" data-en="Password" data-hu="Jelszó">Password</div>
+              <div class="wifi-value">Langallo01</div>
+            </div>
+            <button class="copy-btn" data-copy="Langallo01">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span data-en="Copy" data-hu="Másolás">Copy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CHECK-IN / CHECK-OUT ===== -->
+  <div class="section open" id="checkin">
+    <button class="section-header">
+      <div class="section-icon checkin">🔑</div>
+      <span class="section-title" data-en="Check-in / Check-out" data-hu="Bejelentkezés / Kijelentkezés">Check-in / Check-out</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">15:00</div>
+            <div class="timeline-label">Check-in</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:00</div>
+            <div class="timeline-label">Check-out</div>
+          </div>
+        </div>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="On the day of your arrival we will send you all the details you need." data-hu="Érkezése napján elküldjük az összes szükséges információt.">On the day of your arrival we will send you all the details you need.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Upon checking out, please leave the keys in the lockbox." data-hu="Kijelentkezéskor kérjük, hagyja a kulcsokat a lockboxban.">Upon checking out, please leave the keys in the lockbox.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HOUSE RULES ===== -->
+  <div class="section" id="rules">
+    <button class="section-header">
+      <div class="section-icon rules">📋</div>
+      <span class="section-title" data-en="House Rules" data-hu="Házszabályzat">House Rules</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="The apartment and the whole building are NON-SMOKING." data-hu="Az apartmanban és az egész épületben TILOS a dohányzás.">The apartment and the whole building are NON-SMOKING.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Avoid making noise after 9 PM (21:00) and please be generally mindful of the neighborhood." data-hu="21 óra után kerülje a hangoskodást, és legyen tekintettel a szomszédokra.">Avoid making noise after 9 PM (21:00) and please be generally mindful of the neighborhood.</span>
+          </li>
+        </ul>
+        <div class="tip-box mt-12" data-en="💧 The tap water is drinkable and of good quality." data-hu="💧 A csapvíz iható és jó minőségű.">💧 The tap water is drinkable and of good quality.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div class="section open" id="contact">
+    <button class="section-header">
+      <div class="section-icon contact">📞</div>
+      <span class="section-title" data-en="Contact" data-hu="Kapcsolat">Contact</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <a href="tel:112" class="contact-card">
+          <div class="icon emergency">🚨</div>
+          <div>
+            <div class="label" data-en="Emergency" data-hu="Segélyhívó">Emergency</div>
+            <div class="value">112</div>
+          </div>
+        </a>
+        <a href="tel:+36301865215" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 1" data-hu="Telefon 1">Phone 1</div>
+            <div class="value">+36 30 186 5215</div>
+          </div>
+        </a>
+        <a href="tel:+36707863387" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 2" data-hu="Telefon 2">Phone 2</div>
+            <div class="value">+36 70 786 3387</div>
+          </div>
+        </a>
+        <a href="tel:+36704749823" class="contact-card">
+          <div class="icon phone">📱</div>
+          <div>
+            <div class="label" data-en="Phone 3" data-hu="Telefon 3">Phone 3</div>
+            <div class="value">+36 70 474 9823</div>
+          </div>
+        </a>
+        <p class="text-sm text-muted mt-12" data-en="The quickest way to reach us is through your Airbnb or Booking.com platform." data-hu="A leggyorsabb módja az elérésünknek, ha az Airbnb vagy Booking.com felületén ír nekünk.">The quickest way to reach us is through your Airbnb or Booking.com platform.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADDRESS ===== -->
+  <div class="section" id="address">
+    <button class="section-header">
+      <div class="section-icon transport">📍</div>
+      <span class="section-title" data-en="Address" data-hu="Cím">Address</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <p style="font-weight:700;font-size:15px;margin-bottom:12px">8651 Balatonszabadi, Vak Bottyán utca 2L</p>
+        <div class="address-block">
+          <button class="copy-btn" data-copy="8651 Balatonszabadi, Vak Bottyán utca 2L">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span data-en="Copy address" data-hu="Cím másolása">Copy address</span>
+          </button>
+          <a href="https://www.google.com/maps/search/?api=1&query=8651+Balatonszabadi+Vak+Botty%C3%A1n+utca+2L" target="_blank" class="maps-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Navigate" data-hu="Navigálás">Navigate</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TRANSPORT ===== -->
+  <div class="section" id="transport">
+    <button class="section-header">
+      <div class="section-icon transport">🚌</div>
+      <span class="section-title" data-en="Getting Around" data-hu="Közlekedés">Getting Around</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <h4 class="mb-8" data-en="🚕 Taxi & Car Rental" data-hu="🚕 Taxi & Autókölcsönzés">🚕 Taxi & Car Rental</h4>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span>Badacsony Taxi: <a href="tel:+36306026963" style="color:inherit;text-decoration:underline">+36 30 602 6963</a></span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span>Tapolca Taxi: <a href="tel:+36305052919" style="color:inherit;text-decoration:underline">+36 30 505 2919</a></span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Bixx Car Rental Keszthely:" data-hu="Bixx Autókölcsönző Keszthely:">Bixx Car Rental Keszthely:</span> <a href="tel:+36309397200" style="color:inherit;text-decoration:underline">+36 30 939 7200</a>
+          </li>
+        </ul>
+
+        <h4 class="mt-16 mb-8" data-en="🚌 Public Transportation" data-hu="🚌 Tömegközlekedés">🚌 Public Transportation</h4>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Bus stop: Balatonszabadi, Vak Bottyán utca (~3 min walk). Connections to Siófok and nearby towns." data-hu="Buszmegálló: Balatonszabadi, Vak Bottyán utca (~3 perc séta). Csatlakozás Siófokra és környező településekre.">Bus stop: Balatonszabadi, Vak Bottyán utca (~3 min walk). Connections to Siófok and nearby towns.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="Train station: Siófok, Millennium park (~3 km). MÁV trains to Budapest and Balaton towns." data-hu="Vasútállomás: Siófok, Millennium park (~3 km). MÁV vonatok Budapestre és a balatoni településekre.">Train station: Siófok, Millennium park (~3 km). MÁV trains to Budapest and Balaton towns.</span>
+          </li>
+        </ul>
+        <div class="tip-box mt-12" data-en="🎫 Tickets can be purchased from the purple ticket machines at the train station. The machines speak English." data-hu="🎫 Jegyeket a lila jegyautomatákból vásárolhat a vasútállomáson. Az automaták angolul is működnek.">🎫 Tickets can be purchased from the purple ticket machines at the train station. The machines speak English.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GROCERY ===== -->
+  <div class="section" id="grocery">
+    <button class="section-header">
+      <div class="section-icon grocery">🛒</div>
+      <span class="section-title" data-en="Grocery & Pharmacy" data-hu="Bevásárlás & Gyógyszertár">Grocery & Pharmacy</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="place-card">
+          <div class="place-name">Coop</div>
+          <div class="place-desc" data-en="4–5 minutes walk from the apartment." data-hu="4–5 perc séta az apartmantól.">4–5 minutes walk from the apartment.</div>
+          <div class="place-address">Balatonszabadi, Vak Bottyán u. 39</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Coop+Balatonszabadi+Vak+Botty%C3%A1n+u.+39" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+        <div class="place-card">
+          <div class="place-name">Tesco</div>
+          <div class="place-address">Vak Bottyán utca 27, Siófok, 8600</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Tesco+Vak+Botty%C3%A1n+utca+27+Si%C3%B3fok" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+        <div class="place-card">
+          <div class="place-name" data-en="Pharmacy — Aranyhíd Patika" data-hu="Gyógyszertár — Aranyhíd Patika">Pharmacy — Aranyhíd Patika</div>
+          <div class="place-address">Balatonszabadi, Vak Bottyán utca 99</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Aranyh%C3%ADd+Patika+Balatonszabadi+Vak+Botty%C3%A1n+utca+99" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BANKING ===== -->
+  <div class="section" id="banking">
+    <button class="section-header">
+      <div class="section-icon bank">🏦</div>
+      <span class="section-title" data-en="Banking & ATM" data-hu="Bankolás & ATM">Banking & ATM</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="OTP Bank: Fő tér 7, Siófok." data-hu="OTP Bank: Fő tér 7, Siófok.">OTP Bank: Fő tér 7, Siófok.</span>
+          </li>
+          <li class="info-item">
+            <span class="bullet"></span>
+            <span data-en="ATM: Tesco, Vak Bottyán utca 27, Siófok." data-hu="ATM: Tesco, Vak Bottyán utca 27, Siófok.">ATM: Tesco, Vak Bottyán utca 27, Siófok.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESTAURANTS ===== -->
+  <div class="section" id="restaurants">
+    <button class="section-header">
+      <div class="section-icon food">🍽️</div>
+      <span class="section-title" data-en="Restaurants" data-hu="Éttermek">Restaurants</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="cat-filter">
+          <button class="cat-btn active" data-filter="all" data-en="All" data-hu="Összes">All</button>
+          <button class="cat-btn" data-filter="hungarian" data-en="Hungarian" data-hu="Magyar">Hungarian</button>
+          <button class="cat-btn" data-filter="fine" data-en="Fine Dining" data-hu="Fine Dining">Fine Dining</button>
+        </div>
+
+        <!-- Hungarian -->
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Echo Étterem</div>
+          <div class="place-desc" data-en="Scenic spot on Echo Hill. Hungarian and international cuisine with a great terrace." data-hu="Festői helyszín a Visszhang dombon. Magyar és nemzetközi konyha, remek terasszal.">Scenic spot on Echo Hill. Hungarian and international cuisine with a great terrace.</div>
+          <div class="place-address">Tihany, Visszhang domb 23</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Echo+%C3%89tterem+Tihany+Visszhang+domb+23" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">Calvados Étterem</div>
+          <div class="place-desc" data-en="Friendly restaurant with terrace, serving local dishes." data-hu="Barátságos étterem terasszal, helyi ételekkel.">Friendly restaurant with terrace, serving local dishes.</div>
+          <div class="place-address">Erkel Ferenc utca 11, Siófok</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Calvados+%C3%89tterem+Erkel+Ferenc+utca+11+Si%C3%B3fok" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <div class="place-card" data-cat="hungarian">
+          <div class="place-name">János Vendéglő</div>
+          <div class="place-desc" data-en="Cozy restaurant with typical Hungarian dishes." data-hu="Hangulatos vendéglő tipikus magyar ételekkel.">Cozy restaurant with typical Hungarian dishes.</div>
+          <div class="place-address">Szent László utca 192/A, Siófok</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=J%C3%A1nos+Vendl%C3%A9gl%C5%91+Szent+L%C3%A1szl%C3%B3+utca+192+Si%C3%B3fok" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <!-- Fine Dining -->
+        <div class="place-card" data-cat="fine">
+          <div class="place-name">Mala Garden Restaurant</div>
+          <div class="place-desc" data-en="Exotic atmosphere with magnificent Balaton view. Asian and Mediterranean cuisine." data-hu="Egzotikus hangulat, fenséges balatoni kilátással. Ázsiai és mediterrán konyha.">Exotic atmosphere with magnificent Balaton view. Asian and Mediterranean cuisine.</div>
+          <div class="place-address">Petőfi Sétány 15/A, Siófok</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Mala+Garden+Restaurant+Pet%C5%91fi+S%C3%A9t%C3%A1ny+15+Si%C3%B3fok" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <div class="tip-box mt-16" data-en="💡 Check opening hours in advance, especially during off-season (October–April)." data-hu="💡 Ellenőrizze a nyitvatartást előre, különösen szezonon kívül (október–április).">💡 Check opening hours in advance, especially during off-season (October–April).</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WINE & DRINKS ===== -->
+  <div class="section" id="wine">
+    <button class="section-header">
+      <div class="section-icon food">🍷</div>
+      <span class="section-title" data-en="Wine & Drinks" data-hu="Bor & Italok">Wine & Drinks</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="place-card">
+          <div class="place-name">ST.DONAT Organic Wine Estate</div>
+          <div class="place-desc" data-en="Outstanding organic wines in a beautiful setting." data-hu="Kiemelkedő bioborok gyönyörű környezetben.">Outstanding organic wines in a beautiful setting.</div>
+          <div class="place-address">Csopak, Szitahegyi u. 28, 8229</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=St.+Donat+Organic+Wine+Estate+Csopak+Szitahegyi+u.+28" target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <div class="place-card">
+          <div class="place-name">HOMOLA BORTERASZ</div>
+          <div class="place-desc" data-en="Fantastic wines and a beautiful panoramic Balaton view." data-hu="Fantasztikus borok és gyönyörű balatoni panoráma.">Fantastic wines and a beautiful panoramic Balaton view.</div>
+          <div class="place-address">Paloznak, Vincellér u., 8229</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Homola+Borterasz+Paloznak+Vincell%C3%A9r+u." target="_blank" class="place-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-en="Open in Maps" data-hu="Megnyitás térképen">Open in Maps</span>
+          </a>
+        </div>
+
+        <div class="tip-box mt-12" data-en="💰 Tipping (~10%, &quot;borraváló&quot; in Hungarian) is customary. Some restaurants automatically charge 15% service fee — check the bottom of your bill." data-hu="💰 Borravaló (~10%) a szokásos. Egyes éttermek automatikusan felszámítanak 15% szervizdíjat — ellenőrizze a számla alját.">💰 Tipping (~10%, "borraváló" in Hungarian) is customary. Some restaurants automatically charge 15% service fee — check the bottom of your bill.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SIGHTS ===== -->
+  <div class="section" id="sights">
+    <button class="section-header">
+      <div class="section-icon sights">🏛️</div>
+      <span class="section-title" data-en="Must See Sights — Lake Balaton" data-hu="Látnivalók — Balaton">Must See Sights — Lake Balaton</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Tihany Peninsula" data-hu="Tihanyi-félsziget">Tihany Peninsula</div>
+          <div class="sight-desc" data-en="Tihany Abbey (Benedictine monastery, founded 1055), lavender fields, Echo Hill with panoramic views of Lake Balaton." data-hu="Tihanyi Apátság (bencés kolostor, alapítva 1055), levendulás mezők, Visszhang domb panorámás kilátással a Balatonra.">Tihany Abbey (Benedictine monastery, founded 1055), lavender fields, Echo Hill with panoramic views of Lake Balaton.</div>
+          <span class="sight-badge" data-en="Top Pick" data-hu="Kiemelt">Top Pick</span>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Balatonfüred</div>
+          <div class="sight-desc" data-en="Tagore Promenade along the lakefront, Kisfaludy Lookout with stunning views, Anna Grand Hotel and Spa." data-hu="Tagore Sétány a tóparton, Kisfaludy Kilátó lenyűgöző panorámával, Anna Grand Hotel és Spa.">Tagore Promenade along the lakefront, Kisfaludy Lookout with stunning views, Anna Grand Hotel and Spa.</div>
+          <span class="sight-badge" data-en="Top Pick" data-hu="Kiemelt">Top Pick</span>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Badacsony</div>
+          <div class="sight-desc" data-en="Volcanic soil, famous vineyards (Olaszrizling, Kéknyelű wines). Visit Rózsakő — legend says couples who sit on it will marry within a year!" data-hu="Vulkanikus talaj, híres szőlőbirtokok (Olaszrizling, Kéknyelű borok). Látogassa meg a Rózsakövet — a legenda szerint a párok, akik ráülnek, egy éven belül összeházasodnak!">Volcanic soil, famous vineyards (Olaszrizling, Kéknyelű wines). Visit Rózsakő — legend says couples who sit on it will marry within a year!</div>
+          <span class="sight-badge" data-en="Top Pick" data-hu="Kiemelt">Top Pick</span>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Szigliget Castle" data-hu="Szigligeti Vár">Szigliget Castle</div>
+          <div class="sight-desc" data-en="Medieval fortress with panoramic views over Lake Balaton and the surrounding vineyards." data-hu="Középkori erőd panorámás kilátással a Balatonra és a környező szőlőbirtokokra.">Medieval fortress with panoramic views over Lake Balaton and the surrounding vineyards.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Káli Basin (Káli-medence)" data-hu="Káli-medence">Káli Basin (Káli-medence)</div>
+          <div class="sight-desc" data-en="Known as &quot;Hungarian Provence&quot; — charming villages, vineyards, and Salföld Nature Reserve." data-hu="A &quot;Magyar Provence&quot; — bájos falvak, szőlőbirtokok és a Salföldi Természetvédelmi Terület.">Known as "Hungarian Provence" — charming villages, vineyards, and Salföld Nature Reserve.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Hegyestű</div>
+          <div class="sight-desc" data-en="Impressive basalt columns formed by volcanic activity. Geological visitor center on site." data-hu="Lenyűgöző bazaltoszlopok vulkanikus tevékenység által formálva. Geológiai látogatóközpont a helyszínen.">Impressive basalt columns formed by volcanic activity. Geological visitor center on site.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Tapolca Lake Cave" data-hu="Tapolcai-tavasbarlang">Tapolca Lake Cave</div>
+          <div class="sight-desc" data-en="Unique underground boat ride in crystal-clear cave waters. A one-of-a-kind experience!" data-hu="Egyedülálló földalatti csónakázás kristálytiszta barlangi vizeken. Páratlan élmény!">Unique underground boat ride in crystal-clear cave waters. A one-of-a-kind experience!</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name">Keszthely</div>
+          <div class="sight-desc" data-en="Festetics Palace (stunning Baroque architecture), Balaton Museum — the history and nature of the region." data-hu="Festetics-kastély (lenyűgöző barokk építészet), Balatoni Múzeum — a régió története és természete.">Festetics Palace (stunning Baroque architecture), Balaton Museum — the history and nature of the region.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Balaton Uplands National Park" data-hu="Balaton-felvidéki Nemzeti Park">Balaton Uplands National Park</div>
+          <div class="sight-desc" data-en="Excellent hiking and biking trails, rare plant and animal species. Nature at its best." data-hu="Kiváló túra- és kerékpárutak, ritka növény- és állatfajok. A természet a legjava.">Excellent hiking and biking trails, rare plant and animal species. Nature at its best.</div>
+        </div>
+
+        <div class="sight-card">
+          <div class="sight-name" data-en="Szent György Hill" data-hu="Szent György-hegy">Szent György Hill</div>
+          <div class="sight-desc" data-en="Basalt columns, vineyards, and wine tasting opportunities with stunning views." data-hu="Bazaltoszlopok, szőlőbirtokok és borízlelési lehetőségek lenyűgöző panorámával.">Basalt columns, vineyards, and wine tasting opportunities with stunning views.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIPS ===== -->
+  <div class="section" id="tips">
+    <button class="section-header">
+      <div class="section-icon tips">💡</div>
+      <span class="section-title" data-en="Useful Tips" data-hu="Hasznos tippek">Useful Tips</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="tip-box" data-en="💧 The tap water is drinkable and of good quality." data-hu="💧 A csapvíz iható és jó minőségű.">💧 The tap water is drinkable and of good quality.</div>
+        <div class="tip-box" data-en="💰 Tipping (&quot;borraváló&quot;): ~10% is customary. Some restaurants automatically add 15% service charge — check the bottom of your bill." data-hu="💰 Borravaló: ~10% a szokásos. Egyes éttermek automatikusan felszámítanak 15% szervizdíjat — ellenőrizze a számla alját.">💰 Tipping ("borraváló"): ~10% is customary. Some restaurants automatically add 15% service charge — check the bottom of your bill.</div>
+        <div class="tip-box" data-en="🚌 For local buses, check timetables at the bus stop or online at menetrendek.hu." data-hu="🚌 Helyi buszokhoz ellenőrizze a menetrendet a megállóban vagy online a menetrendek.hu oldalon.">🚌 For local buses, check timetables at the bus stop or online at menetrendek.hu.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEEDBACK ===== -->
+  <div class="section" id="feedback">
+    <button class="section-header">
+      <div class="section-icon feedback">⭐</div>
+      <span class="section-title" data-en="Rate Your Stay" data-hu="Értékelje tartózkodását">Rate Your Stay</span>
+      <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="section-body">
+      <div class="section-content" style="text-align:center">
+        <p class="mb-12" data-en="We'd love to hear about your experience!" data-hu="Szívesen hallanánk a tapasztalatairól!">We'd love to hear about your experience!</p>
+        <p class="text-sm text-muted" data-en="Please give us feedback and review our apartment at the website you booked your holiday." data-hu="Kérjük, értékeljen minket azon a weboldalon, ahol a szállást foglalta.">Please give us feedback and review our apartment at the website you booked your holiday.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    <div class="footer-brand">NEXTGEN REALTORS</div>
+    <p data-en="Your comfort is our priority" data-hu="Az Ön kényelme a legfontosabb">Your comfort is our priority</p>
+  </div>
+
+</div>
+
+<script src="../../shared.js"></script>
+<script>
+function openSection(id) {
+  const section = document.getElementById(id);
+  if (section && !section.classList.contains('open')) {
+    section.classList.add('open');
+  }
+}
+</script>
+</body>
+</html>
